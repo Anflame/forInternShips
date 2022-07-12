@@ -1,0 +1,15 @@
+.logoAndThemeWrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.themeBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    & svg path{
+        stroke: var(--theme-btn-color);
+        fill: var(--theme-btn-color);
+    }
+}

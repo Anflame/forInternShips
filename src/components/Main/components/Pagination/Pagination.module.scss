@@ -1,0 +1,60 @@
+.pagesList {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    @media (max-width: 767px){
+        justify-content: center;
+    }
+    .pagesListes {
+        padding: 10px 15px;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: var(--pagination-text-color);
+        border: var(--pagination-border);
+        &:not(.currentPage):hover {
+            background: var(--pagination-btn-hover);
+            cursor: pointer;
+        }
+    }
+    .prevNextPageBtn {
+        box-sizing: border-box;
+        padding: 10.5px 15px;
+        border: var(--pagination-border);
+        cursor: pointer;
+        background-color: var(--pagination-prevnext-btn-background-color);
+        & svg path{
+            fill: var(--pagination-btn-fill);
+        }
+        & svg {
+            width: 13px;
+            height: 9px;
+        }
+        &:not(.disabled):hover {
+            background: var(--pagination-btn-hover);
+            cursor: pointer;
+        }
+        &:first-child {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+        &:last-child {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+    }
+    .disabled {
+        border: var(--pagination-btn-disabled-border);
+        cursor: default;
+        & svg path{
+            fill: var(--pagination-btn-disabled-fill);
+        }
+    }
+    .currentPage {
+        background: var(--pagination-currentPage-btn-background-color);
+        color: var(--pagination-currentPage-btn-color);
+    }
+}

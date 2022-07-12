@@ -1,0 +1,37 @@
+.listCreated {
+    position: absolute;
+    width:100%;
+    box-sizing: border-box;
+    display: flex;
+    border: var(--input-border-selected);
+    border-top: var(--input-border-top-selected);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    font-size: 13px;
+    line-height: 15px;
+    color: var(--input-text-color);
+    padding: 20px;
+    background: var(--input-background-color);
+    z-index: 3;
+    .input {
+        padding: 15px;
+        width: 40%;
+        background: var(--input-created-list-input-background-color);
+        border: none;
+        border-radius: 8px;
+    }
+    .input:first-child {
+        margin-right: 10px;
+    }
+    .input:last-child {
+        margin-left: 10px;
+    }
+    .hyphen {
+        width: 12px;
+        height: 0px;
+        border: 1px solid #000000;
+    }
+}

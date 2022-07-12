@@ -1,0 +1,136 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+    .select {
+        position: relative;
+        width: 25%;
+        background-color: var(--input-background-color);
+        border-radius: 8px;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+        & svg path {
+            fill: var(--input-btn-color);
+        }
+        &:not(:last-child){
+            margin-right: 20px;
+            @media (max-width: 767px) {
+                margin: 0 auto 15px auto;
+            }
+        }
+        .title {
+            padding: 15px;
+            border: var(--input-border);
+            font-family: 'Roboto';
+            font-size: 13px;
+            line-height: 15px;
+            color: var(--input-text-color);
+            border-radius: 8px;
+            position: relative;
+        }
+        .btnsWrapp {
+            position: absolute;
+            display: flex;
+            justify-content: flex-end;
+            right: 20px;
+            top: 25%;
+        }
+        .btn {
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+        .deleteSelected {
+            transform: matrix(0.71, 0.72, -0.7, 0.71, 0, 0);
+            color: #555555;
+            font-size: 16px;
+            margin-right: 10px;
+            padding-top: 3px;
+            cursor: pointer;
+        }
+        .list {
+            position: absolute;
+            width:100%;
+            box-sizing: border-box;
+            top: 45px;
+            height: 350px;
+            overflow: auto;
+            border: var(--input-border-selected);
+            border-top:  var(--input-border-top-selected);
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-right: 7px;
+            background: var(--input-background-color);
+            color: var(--input-text-color);
+            z-index: 3;
+            .listes {
+                cursor: pointer;
+                padding: 20px 0 20px 30px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                &:hover {
+                    background-color: var(--input-list-hover-background-color);
+                    color: var(--input-list-hover-text-color);
+                }
+            }
+        }
+        .list::-webkit-scrollbar {
+            width: 9px;
+        }
+        .list::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .list::-webkit-scrollbar-thumb {
+            background: #7B7B7B;
+            border-radius: 10px;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+            border: 7px solid rgba(0, 0, 0, 0.1);
+        }
+        .selectedSelect {
+            -webkit-line-clamp: 1;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            padding-right: 20px;
+        }
+    }
+    .selectedTitle {
+        padding: 15px;
+        color: var(--input-text-color);
+        border: var(--input-border-selected);
+        border-bottom: 1px solid transparent;
+        font-family: 'Roboto';
+        font-size: 13px;
+        line-height: 15px;
+        position: relative;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    .selectName {
+        box-sizing: border-box;
+        width: 25%;
+        margin-right: 20px;
+        padding: 15px;
+        background-color: var(--input-background-color);
+        color: var(--input-text-color);
+        border: var(--input-border);
+        font-family: 'Roboto';
+        font-size: 13px;
+        line-height: 15px;
+        border-radius: 8px;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+        @media (max-width: 767px) {
+            margin: 0 auto 15px auto;
+        }
+    }
+}
