@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/forInternShips/static/css/main.765ff176.css",
-    "main.js": "/forInternShips/static/js/main.f48803b4.js",
+    "main.js": "/forInternShips/static/js/main.fc72084b.js",
     "index.html": "/forInternShips/index.html",
     "main.765ff176.css.map": "/forInternShips/static/css/main.765ff176.css.map",
-    "main.f48803b4.js.map": "/forInternShips/static/js/main.f48803b4.js.map"
+    "main.fc72084b.js.map": "/forInternShips/static/js/main.fc72084b.js.map"
   },
   "entrypoints": [
     "static/css/main.765ff176.css",
-    "static/js/main.f48803b4.js"
+    "static/js/main.fc72084b.js"
   ]
 }
