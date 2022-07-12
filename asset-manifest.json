@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Anflame/forInternShips/static/css/main.765ff176.css",
-    "main.js": "/Anflame/forInternShips/static/js/main.f48803b4.js",
-    "index.html": "/Anflame/forInternShips/index.html",
-    "main.765ff176.css.map": "/Anflame/forInternShips/static/css/main.765ff176.css.map",
-    "main.f48803b4.js.map": "/Anflame/forInternShips/static/js/main.f48803b4.js.map"
+    "main.css": "/forInternShips/static/css/main.765ff176.css",
+    "main.js": "/forInternShips/static/js/main.f48803b4.js",
+    "index.html": "/forInternShips/index.html",
+    "main.765ff176.css.map": "/forInternShips/static/css/main.765ff176.css.map",
+    "main.f48803b4.js.map": "/forInternShips/static/js/main.f48803b4.js.map"
   },
   "entrypoints": [
     "static/css/main.765ff176.css",
